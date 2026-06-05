@@ -2,16 +2,16 @@
   "version": 2,
   "functions": {
     "app/api/**/*.ts": {
-      "runtime": "nodejs"
+      "runtime": "@vercel/node@2.0.0"
     },
     "app/api/**/*.tsx": {
-      "runtime": "nodejs"
+      "runtime": "@vercel/node@2.0.0"
     },
     "api/**/*.ts": {
-      "runtime": "nodejs"
+      "runtime": "@vercel/node@2.0.0"
     },
     "api/**/*.tsx": {
-      "runtime": "nodejs"
+      "runtime": "@vercel/node@2.0.0"
     }
   }
 }
