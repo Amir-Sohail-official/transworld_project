@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "functions": {
+    "app/api/**/*.ts": {
+      "runtime": "nodejs"
+    },
+    "app/api/**/*.tsx": {
+      "runtime": "nodejs"
+    },
+    "api/**/*.ts": {
+      "runtime": "nodejs"
+    },
+    "api/**/*.tsx": {
+      "runtime": "nodejs"
+    }
+  }
+}
