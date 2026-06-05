@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'flag-icons/css/flag-icons.min.css';
+
+/* ===== ROOT ===== */
+:root {
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* ===== BASE ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f8fafc; /* clean neutral base */
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===== GLOBAL RESET ===== */
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+textarea,
+a {
+  font: inherit;
+}
+
+/* ===== SELECTION ===== */
+::selection {
+  background: rgba(212, 175, 55, 0.3);
+  color: #000;
+}
+
+/* ===== PREMIUM UTILITIES ===== */
+
+/* Soft section glow */
+.section-glow {
+  background:
+    radial-gradient(
+      circle at 20% 30%,
+      rgba(255, 180, 0, 0.08),
+      transparent 40%
+    ),
+    radial-gradient(circle at 80% 70%, rgba(255, 140, 0, 0.06), transparent 40%);
+}
+
+/* Glass effect */
+.glass {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.6);
+}
+
+/* Smooth transitions globally */
+.smooth {
+  transition: all 0.3s ease;
+}
+
+/* Hide scrollbar (clean UI) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
